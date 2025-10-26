@@ -1,0 +1,48 @@
+/* 🌐 General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Theme color setup */
+:root {
+  --main-color: #066187;
+}
+
+/* Custom buttons */
+.btn-custom {
+  background-color: var(--main-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #054d6b;
+  color: #fff !important;
+}
+
+.btn-outline-custom {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+
+/* Hero heading */
+.hero-heading {
+  color: var(--main-color);
+}
+
+/* Navbar link hover */
+.nav-link:hover {
+  color: var(--main-color) !important;
+}

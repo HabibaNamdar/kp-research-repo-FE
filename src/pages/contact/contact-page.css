@@ -1,0 +1,115 @@
+.contact-section {
+  background-color: #fff;
+}
+
+.map-frame {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.contact-form .btn-primary {
+  background-color: #135c7a;
+  border-color: #135c7a;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0f4d67;
+}
+
+.contact-info i {
+  color: #135c7a;
+}
+
+.contact-info a:hover i {
+  color: #0f4d67;
+}
+
+
+
+/* Target the specific h3 if it has a unique class, e.g., 'contact-heading' */
+.contact-heading { 
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0;
+    width: 243px; 
+    height: 38px;
+}
+
+
+
+.map-image {
+    /* Layout Properties */
+    width: 410px;
+    height: 274px;
+    border-radius: 10px; /* Matches the 'Radius' from the design */
+    
+    
+}
+
+
+.contact-paragraph {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%; /* or 1 */
+    letter-spacing: 0;
+    
+    /* Layout */
+    width: 407px;
+    height: 72px;
+    
+    
+}
+
+.thank-you-message {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    line-height: 100%; /* or 1 (Crucial for the 29px height) */
+    letter-spacing: 0;
+    
+    /* Layout */
+    width: 289px;
+    height: 29px;
+    
+    /* Center the block element */
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+
+.help-heading {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 600 !important; /* Use !important to override Bootstrap's fw-bold (700) or remove fw-bold from HTML */
+    font-size: 20px;
+    line-height: 100%; /* or 1 (Crucial for the 48px height) */
+    letter-spacing: 0;
+    
+    /* Layout */
+    width: 196px;
+    height: 48px;
+    
+}
+
+
+.contact-info-text {
+    color: #000000; /* Pure black */
+     
+}

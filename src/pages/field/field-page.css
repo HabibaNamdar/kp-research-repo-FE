@@ -1,0 +1,46 @@
+.explore-section {
+  background-color: #f9fafb;
+  padding: 70px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.explore-card {
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.explore-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.explore-card .icon {
+  color: #00a27c;
+  font-size: 36px;
+}
+
+.explore-card h5 {
+  color: #000;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.explore-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

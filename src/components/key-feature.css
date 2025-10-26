@@ -1,0 +1,27 @@
+/* 💡 Key Features */
+.features {
+  background-color: #f7faff;
+}
+
+.feature-box {
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box i {
+  margin-bottom: 15px;
+}
+
+.feature-box h6 {
+  color: #333;
+}
+
+.feature-box p {
+  color: #555;
+}

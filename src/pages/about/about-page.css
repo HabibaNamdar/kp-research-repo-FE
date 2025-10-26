@@ -1,0 +1,108 @@
+/* ==========================
+   About Page Styling
+   ========================== */
+
+/* General Page Background */
+.about-section {
+  background-color: #f5f9ff; /* Light bluish background */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.about-section h2,
+.about-section h4,
+.about-section h5 {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+}
+
+/* Paragraph Styling */
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mission / Vision Images */
+.about-section img {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Team Section */
+.about-section .text-center h4 {
+  color: #000;
+}
+
+.about-section .rounded-circle {
+  object-fit: cover;
+  border: 3px solid #e9ecef;
+}
+
+.about-section .text-muted {
+  color: #6c757d !important;
+}
+
+.about-section .team-member h6 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Join Section */
+.join-section {
+  background-color: #eef5ff;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.join-section h4 {
+  color: #000;
+}
+
+.join-section p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.join-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.join-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .about-section h2 {
+    font-size: 28px;
+  }
+  .about-section h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section img {
+    margin-bottom: 20px;
+  }
+  .join-section {
+    padding: 30px 15px;
+  }
+}
+
+.btn-custom-color {
+    background-color: #066187; /* The exact color from your image */
+    color: white;
+    
+}

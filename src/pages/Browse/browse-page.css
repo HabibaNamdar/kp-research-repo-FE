@@ -1,0 +1,131 @@
+.browse-section {
+  background-color: #f8fbff;
+}
+
+.search-bar input {
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.publication-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 0.75rem;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #015c75;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00475a;
+}
+
+
+.contact-label {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    line-height: 100%; /* or 1 (Matches the 24px height) */
+    letter-spacing: 0;
+    text-align: center; /* Horizontal alignment */
+
+    /* Layout */
+    display: block; /* Important for setting width/height and text-align on a label */
+    width: 77px;
+    height: 24px;
+    
+    
+}
+
+
+.year-label {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    line-height: 100%; /* or 1 (Matches the 24px height) */
+    letter-spacing: 0;
+    text-align: center; /* Horizontal alignment */
+
+    /* Layout */
+    display: block; /* Important for setting width/height and text-align on a label */
+    width: 155px;
+    height: 24px;
+    
+    
+}
+
+
+.author-label {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Ensure Inter is available/imported */
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    line-height: 100%; /* or 1 (Matches the 24px height) */
+    letter-spacing: 0;
+    text-align: center; /* Horizontal alignment */
+
+    /* Layout */
+    display: block; /* Important for setting width/height and text-align on a label */
+    width: 66px;
+    height: 24px;
+    
+    
+}
+
+
+/* Define the custom blue color variables for easier maintenance */
+:root {
+    --custom-blue: #007bff; /* A standard bright blue, adjust if needed */
+    --custom-blue-light: rgba(0, 123, 255, 0.25); /* Lighter blue for shadow */
+    --search-border-color: #80bdff; /* Specific light blue border color */
+}
+
+/* Custom styles for the search bar wrapper */
+
+
+/* 1. Target the Input Focus State */
+.custom-search-bar .form-control:focus,
+.custom-search-bar .input-group-text:focus {
+    /* Remove default dark border */
+    border-color: var(--search-border-color);
+    
+    /* Ensure the outline is removed to control shadow */
+    outline: 0; 
+    
+    /* Apply the light blue box shadow for the 'glow' effect */
+    box-shadow: 0 0 0 0.2rem var(--custom-blue-light);
+}
+
+/* 2. Style the Border of the input group and text span */
+.custom-search-bar .input-group,
+.custom-search-bar .input-group-text,
+.custom-search-bar .form-control {
+    /* Set an initial border color that is light gray, or match the focus color */
+    border-color: #ced4da; /* Default Bootstrap border color */
+}
+
+/* 3. Style the Search Icon itself */
+.custom-search-bar .fa-search {
+    /* Keep the icon color subtle */
+    color: #6c757d; 
+}

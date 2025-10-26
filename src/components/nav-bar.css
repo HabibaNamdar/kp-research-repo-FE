@@ -1,0 +1,48 @@
+
+/* 🧭 Navbar */
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0d6efd;
+}
+
+.navbar .btn {
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: 500;
+}
+
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #066187; /* green hover */
+}
+
+.active-link {
+  color: #066187 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #066187;
+}
+
+.btn-custom {
+  background-color: #066187;
+  border: none;
+}
+
+.active-btn {
+  background-color: #066187 !important;
+}

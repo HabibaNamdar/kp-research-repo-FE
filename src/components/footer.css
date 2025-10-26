@@ -1,0 +1,53 @@
+* 🦶 Footer */
+.footer {
+  background: #111;
+  color: #fff;
+}
+
+.footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+.explore .card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.explore .card:hover {
+  transform: translateY(-5px);
+}
+
+.explore img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.footer {
+  background-color: #066187; /* your requested blue shade */
+}
+
+.footer h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}

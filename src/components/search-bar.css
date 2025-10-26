@@ -1,0 +1,11 @@
+/* 🔍 Search Bar */
+.search-bar input {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
+.search-bar button {
+  border-radius: 30px;
+  padding: 10px 20px;
+}

@@ -1,0 +1,18 @@
+/* 🤝 Join Section */
+.join {
+  background: #f8f9fa;
+}
+
+.join img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.join img:hover {
+  transform: scale(1.03);
+}
+
+.join .btn-success {
+  border-radius: 30px;
+  font-weight: 500;
+}

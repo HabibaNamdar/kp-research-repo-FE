@@ -1,0 +1,94 @@
+/* 🦸 Hero Section */
+.hero {
+  background: linear-gradient(to right, #f8f9fa, #eef5ff);
+  min-height: 70vh;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-heading {
+    /* Typography */
+    font-family: 'Inter', sans-serif; /* Use 'Inter' with a common fallback */
+    font-weight: 700;                 /* Corresponds to 'Bold' */
+    font-size: 36px;
+    line-height: 100%;                /* 100% of the font-size, often written as '1' unitless */
+    letter-spacing: 0;                /* 0% is often written as '0' or 'normal' in CSS */
+    
+    /* Color */
+    color: #066187;
+    
+    /* Overriding potential default Bootstrap display-4 styles (optional, but good practice) */
+    /* !important might be needed depending on your specific Bootstrap setup */
+    /* line-height: 1; is often preferred over line-height: 100% */
+    line-height: 1;
+}
+
+
+
+.col-lg-6 img {
+    /* Dimensions from Layout section in the image */
+    width: 538px;
+    height: 281px;
+    
+    /* Radius from Layout section in the image */
+    border-radius: 15px !important; /* Overrides Bootstrap's rounded-3 class */
+
+    /* Positioning (Optional, for absolute positioning) */
+    /* If you want to use the absolute positioning values (Top: 128px, Left: 702px) 
+       you'd need to set the image to position: absolute; and its container to position: relative;
+    
+    position: absolute;
+    top: 128px;
+    left: 702px;
+    */
+}
+
+
+
+/* CSS for the paragraph text */
+.hero-subheading {
+    /* Typography from the image details */
+    font-family: 'Inter', sans-serif; /* Requires Inter font to be loaded */
+    font-weight: 500;                  /* Weight: 500 (Medium) */
+    font-size: 20px;
+    line-height: 1;                    /* Line height: 100% (unitless 1 is preferred) */
+    letter-spacing: 0;                 /* Letter spacing: 0% */
+
+    /* Overrides for Bootstrap classes like .lead or .text-secondary */
+    color: inherit; /* You can set a specific color here if needed, or inherit from a parent */
+    
+    /* Layout properties (optional, only if needed to match position exactly) */
+    /* width: 444px; */
+    /* height: 48px; (This is a calculated height, not a required style) */
+}
+
+.hero-heading {
+    /* Color */
+    color: #066187;
+    
+    /* Typography */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;                 /* Bold */
+    font-size: 36px;
+    line-height: 1;                   /* 100% line height (unitless 1 is best practice) */
+    letter-spacing: 0;                /* 0% letter spacing */
+    
+    /* Optional: Dimensions from Layout in image_1f2279.png
+    width: 419px;
+    */
+}
