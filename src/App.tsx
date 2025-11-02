@@ -362,6 +362,12 @@ import AuthorAnalytics from "./pages/author-analytics/index";
 import AuthorFeedback from "./pages/author-feedback/index";
 import AuthorProfile from "./pages/author-profile/index"
 
+// user subpages
+import UserProfile from "./pages/user-profile/index";
+import UserBookmarks from "./pages/bookmarks/index";
+import UserAnalytics from "./pages/user-analytics/index";
+import UserFeedback from "./pages/user-feedback/index"
+
 
 const App: React.FC = () => {
   return (
@@ -413,6 +419,13 @@ const App: React.FC = () => {
          <Route path="/author/author-analytics" element={<AuthorAnalytics />} />
          <Route path="/author/author-feedback" element={<AuthorFeedback />} />
          <Route path="/author/author-profile" element={<AuthorProfile />} />
+
+         {/* user subpages */}
+         <Route path="/user/user-profile" element={<UserProfile />} />
+         <Route path="/user/bookmarks" element={<UserBookmarks />} />
+         <Route path="/user/user-analytics" element={<UserAnalytics />} />
+         <Route path="/user/user-feedback" element={<UserFeedback />} />
+
 
 
 

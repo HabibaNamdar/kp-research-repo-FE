@@ -118,7 +118,7 @@ const FeedbackReport: React.FC = () => {
         <ul className="list-unstyled sidebar-menu">
           <li className="mb-1">
             <button
-              onClick={() => navigate("/admin")}
+              onClick={() => navigate("/admin-dashboard")}
               className="btn d-flex align-items-center p-2 text-white w-100 text-start"
               style={{ background: "none", border: "none" }}
             >
