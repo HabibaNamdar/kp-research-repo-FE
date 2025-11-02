@@ -355,6 +355,13 @@ import AdminPublications from "./pages/publication/index";
 import AdminAnalytics from "./pages/analytics/index";
 import AdminFeedback from "./pages/feedback/index"; // ✅ ADD THIS IMPORT
 
+// Author Subpages
+import AuthorPublication from "./pages/my-publication/index";
+import AuthorUpload from "./pages/upload-paper/index"
+import AuthorAnalytics from "./pages/author-analytics/index";
+import AuthorFeedback from "./pages/author-feedback/index";
+import AuthorProfile from "./pages/author-profile/index"
+
 
 const App: React.FC = () => {
   return (
@@ -398,6 +405,17 @@ const App: React.FC = () => {
         <Route path="/admin/publication" element={<AdminPublications />} /> {/* ✅ NEW */}
          <Route path="/admin/analytics" element={<AdminAnalytics />} /> {/* ✅ FIXED */}
          <Route path="/admin/feedback" element={<AdminFeedback />} /> {/* ✅ FIXED */}
+
+
+         {/* Authorr Subpages */}
+         <Route path="/author/my-publication" element={<AuthorPublication />} />
+         <Route path="/author/upload-paper" element={<AuthorUpload />} />
+         <Route path="/author/author-analytics" element={<AuthorAnalytics />} />
+         <Route path="/author/author-feedback" element={<AuthorFeedback />} />
+         <Route path="/author/author-profile" element={<AuthorProfile />} />
+
+
+
       </Routes>
     </Router>
   );
