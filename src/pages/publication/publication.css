@@ -1,0 +1,18 @@
+/* publications.css */
+
+/* Ensure table cells have matching padding and alignment */
+.table td, .table th {
+    vertical-align: middle;
+    padding-left: 20px; /* Adjust padding to match visual spacing */
+    padding-right: 20px;
+}
+
+/* Remove default table striping/borders and rely on the custom borderTop */
+.table {
+    --bs-table-bg: #fff;
+}
+
+/* Remove the top border on the first row */
+.table tbody tr:first-child {
+    border-top: none !important;
+}

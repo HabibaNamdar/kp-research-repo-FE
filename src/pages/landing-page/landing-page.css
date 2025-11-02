@@ -46,3 +46,57 @@ body {
 .nav-link:hover {
   color: var(--main-color) !important;
 }
+
+
+
+.signup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 80px;
+  z-index: 1050;
+}
+
+.signup-popup {
+  width: 360px;
+}
+
+.signup-card {
+  position: relative;
+}
+
+
+.signup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.signup-popup {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 380px;
+  position: relative;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

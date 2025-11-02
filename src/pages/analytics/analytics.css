@@ -1,0 +1,74 @@
+/* Sidebar Styling */
+.sidebar-bg {
+  background-color: #003366; /* deep navy blue */
+}
+
+.sidebar-menu button:hover,
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+.active-sidebar-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Scrollable content area */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===== Admin Analytics Content Styling ===== */
+
+/* Style for the heading (below navbar) */
+.container-fluid > h3 {
+  color: #000; /* black text */
+  font-weight: 600;
+  margin-bottom: 30px; /* space below heading */
+  margin-top: 10px; /* small space below navbar */
+}
+
+/* Space between cards and chart section */
+.row.g-4 {
+  margin-bottom: 30px; /* adds space below cards */
+}
+
+/* Card styling */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure chart section has space from cards */
+.card.rounded-lg {
+  margin-top: 20px;
+}
+
+/* For better text readability */
+.text-muted {
+  color: #6c757d !important;
+}

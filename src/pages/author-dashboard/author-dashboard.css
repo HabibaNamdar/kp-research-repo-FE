@@ -1,0 +1,409 @@
+/* ========= Dashboard Styles ========= */
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #0c5575;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #0b4860;
+}
+
+.sidebar-title p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* .nav-links {
+  padding: 1rem;
+} */
+
+.nav-item {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #0b4860;
+}
+
+.nav-item.active {
+  background-color: #0b4860;
+}
+
+.logout {
+  margin: 1rem;
+  border-top: 1px solid #0b4860;
+  padding-top: 1rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bell-icon {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+/* Welcome Section */
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.welcome h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  color: #666;
+}
+
+.upload-btn {
+  background-color: #009975;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #007e5e;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.stat-card {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Recent Activity */
+.recent-activity {
+  padding: 2rem;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.activity-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+select {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Table */
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.activity-table thead {
+  background-color: #f8fafc;
+}
+
+.activity-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .upload-btn {
+    margin-top: 1rem;
+  }
+}
+
+
+/* ===== Recent Activity Section ===== */
+
+.recent-activity {
+  padding: 2rem;
+}
+
+.recent-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+/* Card container */
+.activity-card {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 0; /* Remove padding so header fits perfectly */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  overflow: hidden; /* Ensures borders stay clean */
+}
+
+/* Header inside the table card */
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb; /* light gray top section */
+}
+
+.activity-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.activity-header select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.activity-header select:focus {
+  border-color: #009975;
+  box-shadow: 0 0 0 1px #009975;
+}
+
+/* Table styling */
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.activity-table thead {
+  background-color: #fff;
+}
+
+.activity-table th {
+  text-align: left;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table td {
+  padding: 0.75rem 1.5rem;
+  color: #444;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.activity-table tbody tr:hover {
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease;
+}
+
+
+/* ===== Recent Activity Section ===== */
+
+.recent-activity {
+  padding: 2rem;
+}
+
+/* Recent Activity top row */
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recent-header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.recent-header select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.recent-header select:focus {
+  border-color: #009975;
+  box-shadow: 0 0 0 1px #009975;
+}
+
+/* Card container */
+.activity-card {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+/* Header inside the table card */
+.activity-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.activity-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+/* Table styling */
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.activity-table thead {
+  background-color: #fff;
+}
+
+.activity-table th {
+  text-align: left;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table td {
+  padding: 0.75rem 1.5rem;
+  color: #444;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.activity-table tbody tr:hover {
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease;
+}

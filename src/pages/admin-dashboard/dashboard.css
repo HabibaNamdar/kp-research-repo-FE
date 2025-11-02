@@ -1,0 +1,78 @@
+/* Custom CSS for Admin Dashboard to match the design image */
+
+/* Sidebar Background Color (Dark Teal/Blue) */
+/* Custom CSS for Admin Dashboard to match the design image */
+
+/* Sidebar Background Color (Deep Blue-Green: #066187) */
+.sidebar-bg {
+    background-color: #066187 !important; /* New requested sidebar color */
+}
+
+/* Sidebar Text/Icon Color (White: #FFFFFF) */
+.sidebar-menu a, 
+.sidebar-bg .text-muted {
+    color: #FFFFFF !important; /* Set all text/icons to white */
+}
+
+/* Active Sidebar Link Style (Lighter Blue: #2E7BD6) */
+.sidebar-menu .active-link {
+    background-color: #2E7BD6; /* This color remains for the active link highlight */
+    color: white !important; /* Ensure text is white */
+}
+
+/* Sidebar Link Hover Effect */
+.sidebar-menu a:hover:not(.active-link) {
+    background-color: rgba(46, 123, 214, 0.2); /* Slight hover effect on inactive links */
+    color: white !important; /* Keep hover text white */
+}
+
+/* Small text size for logo details */
+.fs-8 {
+    font-size: 0.75rem !important;
+}
+
+/* Stat Card Styling (Optional: to ensure border-radius) */
+.card {
+    border-radius: 0.5rem; 
+}
+
+/* Legend dots for donut chart categories */
+.category-labels .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Ensure the border above logout is visible against the new background */
+.sidebar-bg .border-secondary {
+    border-color: rgba(255, 255, 255, 0.2) !important; 
+}
+
+/* Remove default Bootstrap table border top on thead for cleaner look */
+.table thead th {
+    border-top: none;
+}
+
+/* Small text size for logo details */
+.fs-8 {
+    font-size: 0.75rem !important;
+}
+
+/* Stat Card Styling (Optional: to ensure border-radius) */
+.card {
+    border-radius: 0.5rem; 
+}
+
+/* Legend dots for donut chart categories */
+.category-labels .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Remove default Bootstrap table border top on thead for cleaner look */
+.table thead th {
+    border-top: none;
+}

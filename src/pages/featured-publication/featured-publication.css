@@ -1,0 +1,48 @@
+.featured-publication-section {
+  background-color: #fff;
+  color: #333;
+}
+
+.featured-publication-section h2 {
+  font-size: 2rem;
+}
+
+.featured-publication-section .badge {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.featured-publication-section .btn {
+  padding: 10px 18px;
+  font-weight: 500;
+}
+
+.featured-publication-section .card {
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.featured-publication-section .card:hover {
+  transform: translateY(-4px);
+}
+
+
+.rectangle-98-style {
+  /* Dimensions */
+  width: 489px !important; 
+  height: 99px !important; 
+
+  /* Radius */
+  border-radius: 5px !important;
+
+  /* Border and Color */
+  border: 1px solid; 
+  border-color: #000000 !important; /* Black border */
+  
+  /* Background Color (inside the box) */
+  background-color: #000000 !important; /* Black background */
+
+  /* Text color for visibility against a black background */
+  color: #ffffff !important; /* White text */
+}

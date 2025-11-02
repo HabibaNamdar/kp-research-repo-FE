@@ -123,13 +123,202 @@
 
 
 
+// import { NavLink } from "react-router-dom";
+// import "./nav-bar.css";
+
+// export default function NavBar() {
+//   return (
+//     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+//       <div className="container">
+//         <NavLink className="navbar-brand d-flex align-items-center" to="/">
+//           <img src="/logo.png" alt="Logo" width="45" className="me-2" />
+//           <div className="text-dark text-decoration-none">
+//             <h5 className="mb-0 fw-bold">Research Repository</h5>
+//             <p
+//               className="small mb-0 fw-bold"
+//               style={{ lineHeight: "1.1", marginTop: "2px" }}
+//             >
+//               & SCIENTIST DIRECTORY
+//               <br />
+//               FOR KP
+//             </p>
+//           </div>
+//         </NavLink>
+
+//         <button
+//           className="navbar-toggler"
+//           type="button"
+//           data-bs-toggle="collapse"
+//           data-bs-target="#navbarNav"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
+
+//         <div
+//           className="collapse navbar-collapse justify-content-end"
+//           id="navbarNav"
+//         >
+//           <ul className="navbar-nav align-items-center">
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/"
+//                 end
+//                 className={({ isActive }) =>
+//                   isActive ? "nav-link active-link" : "nav-link"
+//                 }
+//               >
+//                 Home
+//               </NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/browse"
+//                 className={({ isActive }) =>
+//                   isActive ? "nav-link active-link" : "nav-link"
+//                 }
+//               >
+//                 Browse
+//               </NavLink>
+//             </li>
+//             {/* <li className="nav-item">
+//               <NavLink
+//                 to="/upload"
+//                 className={({ isActive }) =>
+//                   isActive ? "nav-link active-link" : "nav-link"
+//                 }
+//               >
+//                 Upload
+//               </NavLink>
+//             </li> */}
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/about"
+//                 className={({ isActive }) =>
+//                   isActive ? "nav-link active-link" : "nav-link"
+//                 }
+//               >
+//                 About Us
+//               </NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink
+//                 to="/contact"
+//                 className={({ isActive }) =>
+//                   isActive ? "nav-link active-link" : "nav-link"
+//                 }
+//               >
+//                 Contact
+//               </NavLink>
+//             </li>
+//             <li className="nav-item ms-3">
+//               <NavLink
+//                 to="/login"
+//                 className={({ isActive }) =>
+//                   isActive ? "btn btn-custom text-white active-btn" : "btn btn-custom text-white"
+//                 }
+//               >
+//                 Login
+//               </NavLink>
+//             </li>
+//             <li className="nav-item ms-2">
+//               <NavLink
+//                 to="/signup"
+//                 className={({ isActive }) =>
+//                   isActive ? "btn btn-custom text-white active-btn" : "btn btn-custom text-white"
+//                 }
+//               >
+//                 Sign Up
+//               </NavLink>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }
+
+
+
+// import { NavLink } from "react-router-dom";
+// import "./nav-bar.css";
+
+// export default function NavBar({ onSignUpClick }: { onSignUpClick?: () => void }) {
+//   return (
+//     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+//       <div className="container">
+//         <NavLink className="navbar-brand d-flex align-items-center" to="/">
+//           <img src="/logo.png" alt="Logo" width="45" className="me-2" />
+//           <div className="text-dark text-decoration-none">
+//             <h5 className="mb-0 fw-bold">Research Repository</h5>
+//             <p
+//               className="small mb-0 fw-bold"
+//               style={{ lineHeight: "1.1", marginTop: "2px" }}
+//             >
+//               & SCIENTIST DIRECTORY
+//               <br />
+//               FOR KP
+//             </p>
+//           </div>
+//         </NavLink>
+
+//         <button
+//           className="navbar-toggler"
+//           type="button"
+//           data-bs-toggle="collapse"
+//           data-bs-target="#navbarNav"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
+
+//         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+//           <ul className="navbar-nav align-items-center">
+//             <li className="nav-item">
+//               <NavLink to="/" end className="nav-link">Home</NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink to="/browse" className="nav-link">Browse</NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink to="/about" className="nav-link">About Us</NavLink>
+//             </li>
+//             <li className="nav-item">
+//               <NavLink to="/contact" className="nav-link">Contact</NavLink>
+//             </li>
+//             <li className="nav-item ms-3">
+//               <NavLink to="/login" className="btn btn-custom text-white">Login</NavLink>
+//             </li>
+//             <li className="nav-item ms-2">
+//               <button
+//                 onClick={onSignUpClick}
+//                 className="btn btn-custom text-white border-0"
+//               >
+//                 Sign Up
+//               </button>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }
+
+
+
+
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav-bar.css";
 
-export default function NavBar() {
+interface NavBarProps {
+  onSignUpClick?: () => void;
+  onLoginClick?: () => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ onSignUpClick, onLoginClick }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
       <div className="container">
+        {/* Logo */}
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <img src="/logo.png" alt="Logo" width="45" className="me-2" />
           <div className="text-dark text-decoration-none">
@@ -145,6 +334,7 @@ export default function NavBar() {
           </div>
         </NavLink>
 
+        {/* Mobile toggle */}
         <button
           className="navbar-toggler"
           type="button"
@@ -154,85 +344,52 @@ export default function NavBar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
+        {/* Nav links */}
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav align-items-center">
             <li className="nav-item">
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
+              <NavLink to="/" end className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/browse"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
+              <NavLink to="/browse" className="nav-link">
                 Browse
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/upload"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
-                Upload
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
+              <NavLink to="/about" className="nav-link">
                 About Us
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
+              <NavLink to="/contact" className="nav-link">
                 Contact
               </NavLink>
             </li>
+
+            {/* Popup Buttons */}
             <li className="nav-item ms-3">
-              <NavLink
-                to="/login"
-                className={({ isActive }) =>
-                  isActive ? "btn btn-custom text-white active-btn" : "btn btn-custom text-white"
-                }
+              <button
+                onClick={onLoginClick}
+                className="btn btn-primary text-white border-"
               >
                 Login
-              </NavLink>
+              </button>
             </li>
             <li className="nav-item ms-2">
-              <NavLink
-                to="/signup"
-                className={({ isActive }) =>
-                  isActive ? "btn btn-custom text-white active-btn" : "btn btn-custom text-white"
-                }
+              <button
+                onClick={onSignUpClick}
+                className="btn btn-primary text-white border-0"
               >
                 Sign Up
-              </NavLink>
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   );
-}
+};
+
+export default NavBar;

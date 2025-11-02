@@ -1,0 +1,107 @@
+
+
+/* Styling for the popup container */
+.signup-modal-box {
+    /* Dimensions and centering (adjust as necessary for your page layout) */
+    width: 100%;
+    max-width: 400px; /* Typical width for a form modal */
+    margin: 50px auto;
+    
+    /* Box appearance */
+    background: white;
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid #ddd;
+    
+    /* The image shows a background behind it, this assumes this box is the main feature */
+    /* You might need a wrapper component to handle the background overlay */
+}
+
+/* Styling for input fields to match the image's aesthetic */
+.signup-form .form-control {
+    height: 50px; /* Taller input fields */
+    border-radius: 8px; /* Slightly more rounded corners */
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+/* Hide the role label to match the image's compact design */
+.signup-form .form-label {
+    /* Keep the label for accessibility, but style it to be less prominent if needed */
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 4px; /* Reduced space below label */
+}
+
+/* Customizing the password field with the toggle icon */
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%; /* Adjust to vertically align with input field */
+    right: 15px;
+    transform: translateY(12px); /* Fine-tune adjustment */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Styling for Radio Buttons (Role) */
+.role-options .form-check-input {
+    /* Custom radio button styling to match the image's blue selection */
+    width: 1em;
+    height: 1em;
+    border-color: #007bff; /* Blue border */
+}
+/* Ensure the radio button for 'Author' is selected blue */
+.role-options .form-check-input[checked] {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Custom Checkbox for Terms and conditions */
+.terms-checkbox-container {
+    padding-left: 0; /* Adjust container padding */
+}
+
+.terms-checkbox-container .form-check-input {
+    float: left;
+    margin-right: 0.5rem;
+    /* Custom checkbox size/style if needed */
+}
+
+/* Style for the Sign Up Button */
+.btn-custom-signup {
+    /* Darker blue/teal color from the image */
+    background-color: #004d66; 
+    border-color: #004d66;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom-signup:hover {
+    background-color: #00334d;
+    border-color: #00334d;
+}
+
+
+/* Add/Modify this in your signup.css */
+.signup-form .form-control,
+.signup-form .form-select { /* Added .form-select */
+    height: 50px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
