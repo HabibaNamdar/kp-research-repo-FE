@@ -82,7 +82,7 @@ const AdminAnalytics: React.FC = () => {
 
           <li className="mb-1">
             <a
-              href="#"
+              href="feedback"
               className="d-flex align-items-center p-2 rounded text-decoration-none text-white"
             >
               <i className="bi bi-chat-left-text-fill me-3"></i> Feedback / Report

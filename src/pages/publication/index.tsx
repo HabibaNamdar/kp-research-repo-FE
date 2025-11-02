@@ -126,7 +126,7 @@ const Publications: React.FC = () => {
 
             <li className="mb-1">
                 <button
-                    onClick={() => navigate("/user-management")}
+                    onClick={() => navigate("/admin/user-management")}
                     className="btn d-flex align-items-center p-2 w-100 text-start"
                     style={getSidebarItemStyle("/user-management")}
                 >
@@ -151,12 +151,12 @@ const Publications: React.FC = () => {
             </li>
 
             <li className="mb-1">
-                <a href="#" className="d-flex align-items-center p-2 text-white text-decoration-none">
+                <a href="analytics" className="d-flex align-items-center p-2 text-white text-decoration-none">
                     <i className="bi bi-bar-chart-line-fill me-3"></i> Analytics
                 </a>
             </li>
             <li className="mb-1">
-                <a href="#" className="d-flex align-items-center p-2 text-white text-decoration-none">
+                <a href="feedback" className="d-flex align-items-center p-2 text-white text-decoration-none">
                     <i className="bi bi-chat-left-text-fill me-3"></i> Feedback / Report
                 </a>
             </li>
